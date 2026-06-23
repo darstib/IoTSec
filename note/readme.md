@@ -155,6 +155,38 @@
   - TSM 可信服务管理器与 HCE 主机卡模拟
   - NFC 应用场景：UID 访问控制、事件票务、公交票务、开放支付票务
 
+### Week 6：蓝牙安全与隐私
+
+- [note11-bluetooth.md](note11-bluetooth.md) — 蓝牙安全与隐私（Bluetooth Security and Privacy）
+  - 蓝牙概述：ISM 2.4 GHz、个人局域网（PAN）、SIG 管理、命名由来与应用场景
+  - 蓝牙技术特征：TDMA-TDD-慢速跳频扩频、10/100 m 范围、微微网容量
+  - 网络拓扑：微微网（Piconet，1 主 + 7 活动从）、散射网（Scatternet）规则
+  - 物理层机制：79 频率伪随机跳频、自适应跳频（AFH）、625 μs 时隙、TDD
+  - 蓝牙版本演进：v1→v5；BLE（v4.0）低功耗、不向下兼容、3 广播 + 37 数据信道
+  - 蓝牙安全架构：认证/机密性/授权三目标；Mode 1/2/3 三种安全模式
+  - 链路级安全：PIN、BD_ADDR、RAND、E0 流密码、挑战-应答机制
+  - 安全威胁：DoS、Fuzzing、Bluejacking、Bluesnarfing
+  - 嗅探攻击：CC2540 + PACKET-SNIFFER、ubertooth、libbtbb、wireshark、crackle
+  - BLE 重放攻击（Light Blue）与 BLE 配对降级攻击（USENIX Security 2020）
+  - BLE 隐私失效：地址随机化质量差、名称泄露、一致地址 → 追踪/画像/伤害用户
+  - **BLE-Guardian**（USENIX Security 2016）：学习广播序列精准干扰 + OOB 授权 + 连接参数过滤
+
+### Week 7：物联网安全威胁与防御
+
+- [note12-iot-security.md](note12-iot-security.md) — 物联网安全威胁与防御
+  - 物联网发展历程：从 WSN 到 AIoT（1990s-2026）
+  - 物联网四层架构：感知层、网络层、管理层、应用层
+  - 硬件组件详解：传感器、微处理器、通信芯片、能源供应
+  - 最新技术趋势（2024-2026）：MEMS、毫米波雷达、超低功耗 MCU、LoRa Plus、Matter 协议
+  - 物联网成为信息安全重灾区：攻击案例、经济损失预测、威胁态势演进
+  - 金融行业攻击案例：Carbanak 十亿美元劫案、俄罗斯银行 DDoS、大规模僵尸网络（RCtea、Aisuru）
+  - 物联网设备风险等级：灾难性（安防系统、能源计量表）、破坏性（视频会议、打印机、VoIP）、有害性（智能灯泡）
+  - 物联网安全需求：接入安全、通信安全、数据隐私安全、计算系统安全
+  - 物联网安全架构：感知安全、传输安全、数据安全、应用安全、安全控制与审计
+  - 语音助手对抗样本攻击：PhoneyTalker（音素级攻击）、PhyTalker（物理域实时攻击）
+  - AIGC 时代新威胁：语音克隆技术评估、5 种克隆技术、攻击有效性分析、检测方法局限
+  - 对抗样本的双面性：从威胁到隐私保护工具、非侵入式说话人去识别方案
+
 ---
 
 ## 学习建议
